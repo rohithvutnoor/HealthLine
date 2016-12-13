@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title%></title>
+    <meta name="description" content="A Complete Health Guide">
+    <meta name="keywords" content="keyword1, keyword2, keyword3">
+    <link rel='stylesheet' href='/stylesheets/style1.css' />
+    <script src = "../diseases.js"></script>
+</head>
+<body >
+
+<!--<% include template/header.ejs%>-->
+<!--<p>Welcome to <%= title %></p>-->
+<div id="wrapper">
+
+    <div id="header">
+
+        <div class="top_banner">
+            <h1>HEALTH CARE</h1>
+            <p>Be Happy</p>
+        </div>
+
+        <div class="navigation">
+            <ul>
+                <center>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="diseases">Disease Description</a></li>
+                    <li><a href="about">About</a></li>
+                    <li><a href="contact">Contact</a></li>
+                </center>
+            </ul>
+        </div>
+
+    </div>
+
+    <div id="page_content">
+
+        <div class="left_side_bar">
+
+            <!--            <div class="col_1">
+                            <h1>Main Menu</h1>
+                            <div class="box">
+                                <div class="dropdown">
+                                    <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+                                    <div id="myDropdown" class="dropdown-content">
+                                        <a href="#">Link 1</a>
+                                        <a href="#">Link 2</a>
+                                        <a href="#">Link 3</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            -->
+
+        </div>
+
+        <div class="">
+            <div class="common_content"></br></br></br>
+                <center><h2><%=data%></h2></center>
+                <hr>
+                <h1><%diseasedata.diseases%></h1>
+                </br></br></br></br>
+                <ul>
+                    <% diseasedata.diseases.forEach(function(item){%>
+                    <h2 class = "diseaseTitle" style = "text-transform: uppercase; font-weight: bold"><%=  item.name   %></h2></br>
+                    <h3>Description</h3>
+                    <p><%= item.description1%>     <%=item.description2%>     <%=item.description3%>     <%=item.description4%>     <%=item.description5%></p></br></br>
+                    <h3>Precautions</h3>
+                    <p><%= item.precautions1%>    <%=item.precautions2%>    <%=item.precautions3%>    <%=item.precautions4%>    <%=item.precautions5%></p></br></br>
+                    <a href = <%=item.readMore%> > Read More </a></br></br><hr></br></br></br></br>
+                    <%});%>
+                </ul>
+               <!-- <ul>
+                    <% diseasedata.diseases.forEach(function(item){%>
+                    <li><%=  item.name   %></li>
+
+                    <%});%>
+                </ul>-->
+                <p></p>
+            </div>
+
+        </div>
+        </br></br></br></br></br></br></br></br></br></br></br>
+        </br></br></br></br></br></br></br>
+        <div class="clear"></div>
+
+        <!--start footer from here-->
+        <div id="footer">Copyright &copy; 2016. Design by <a href="" target="_blank">Health Care</a><br>
+
+            <a href=""><img src="images/footer.gif" class="copyright" alt=""></a></div>
+
+        <!--/. end footer from here-->
+    </div>
+
+</div>
+</body>
+</html>

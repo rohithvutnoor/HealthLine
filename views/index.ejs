@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%=title%></title>
+    <meta name="description" content="A Complete Health Guide">
+    <meta name="keywords" content="keyword1, keyword2, keyword3">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script src = "../diseases.js"></script>
+  </head>
+  <body onload="showAppHead()">
+
+<!--  <% include template/header.ejs%>-->
+
+
+  <div id="wrapper">
+
+    <div id="header">
+
+      <div class="top_banner">
+        <h1>HEALTH CARE</h1>
+        <p>Be Happy</p>
+      </div>
+
+      <div class="navigation">
+        <ul>
+           <center>
+          <li><a href="/">Home</a></li>
+          <li><a href="diseases">Disease Description</a></li>
+          <li><a href="about">About</a></li>
+          <li><a href="contact">Contact</a></li>
+
+          </center>
+        </ul>
+      </div>
+
+    </div>
+    <div id="page_content">
+
+      <div class="left_side_bar">
+
+        <div class="col_1">
+          <h1 style="font-variant-caps: all-petite-caps">Welcome <%=currentUser%></h1></br></br></br>
+          <h1>Main Menu</h1>
+          <div class="box">
+            <!--<ul>
+              <li><a href="#">Menu Item 1</a></li>
+              <li><a href="#">Menu Item 2</a></li>
+              <li><a href="#">Menu Item 3</a></li>
+              <li><a href="#">Menu Item 4</a></li>
+              <li><a href="#">Menu Item 5</a></li>
+              <li><a href="#">Menu Item 6</a></li>
+              <li><a href="#">Menu Item 7</a></li>
+              <li><a href="#">Menu Item 8</a></li>
+              <li><a href="#">Menu Item 9</a></li>
+            </ul>-->
+            <h4>Register Here</h4>
+            <form action = '/Registered' method = "POST">
+
+              <label for = "name">Name:</label><br>
+              <input type = "text" name="name"/><br><br>
+
+              <label for = "pass">Password:</label><br>
+              <input type = "password" name="pass"/><br><br>
+
+              <input type = "submit"/>
+            </form>
+            </br></br>
+            <h4>Login</h4>
+            <form action = '/LoggedIn' method = "POST">
+
+              <label for = "Name">Name:</label><br>
+              <input type = "text" name="name"/><br><br>
+
+              <label for = "pass">Password:</label><br>
+              <input type = "password" name="pass"/><br><br>
+
+              <input type = "submit"/>
+            </form></br></br></br></br></br></br></br>
+          </div>
+        </div>
+
+        <div class="col_1">
+          <h1>PROFILE</h1>
+          <div class="box">
+            <p style="font-variant-caps: all-petite-caps"><%=currentUser%></p>
+            <br>
+            <p style="font-variant-caps: all-petite-caps">Email : <%=userData[0]%></p>
+            <p style="font-variant-caps: all-petite-caps">Phone No : <%=userData[1]%></p>
+            <p style="font-variant-caps: all-petite-caps">City : <%=userData[2]%></p>
+            <p style="font-variant-caps: all-petite-caps">Pin Code : <%=userData[3]%></p>
+            <p style="font-variant-caps: all-petite-caps">Effect : <%=userData[4]%></p>
+            <p style="font-variant-caps: all-petite-caps">Today's Date : <%= Date()%></p>
+            <p style="font-variant-caps: all-petite-caps">Consultance Date : <%=userData[5]%></p>
+            <!--<p style="font-variant-caps: all-petite-caps">Consultant Doctor : </p>-->
+          </div>
+        </div>
+
+      </div>
+
+      <div class="right_section">
+        <div class="common_content">
+          <h2>HOME</h2>
+          <hr>
+          <p></p>
+        </div>
+        <div id="symptomCheck">
+          <h2>Symptoms Checker</h2><br/><br/><br/>
+          <form action="/symptoms" method="post">
+
+            <h3>ChestPain&nbsp;<input type="checkbox" name="symptom" value="ChestPain"/>&nbsp;&nbsp;
+            Cough&nbsp;<input type="checkbox" name="symptom" value="Cough"/>&nbsp;&nbsp;
+            Dehydration&nbsp;<input type="checkbox" name="symptom" value="Dehydration"/>&nbsp;&nbsp;
+            Diarrhea&nbsp;<input type="checkbox" name="symptom" value="Diarrhea"/>&nbsp;&nbsp;</h3><br/>
+            <h3>EyePain&nbsp;<input type="checkbox" name="symptom" value="EyePain"/>
+            Fever&nbsp;<input type="checkbox" name="symptom" value="Fever"/>&nbsp;&nbsp;
+            Headache&nbsp;<input type="checkbox" name="symptom" value="Headache"/>&nbsp;&nbsp;
+            MusclePain&nbsp;<input type="checkbox" name="symptom" value="MusclePain"/>&nbsp;&nbsp;
+            Pressure&nbsp;<input type="checkbox" name="symptom" value="Pressure"/>&nbsp;&nbsp;</h3><br/>
+            <h3>Shivering&nbsp;<input type="checkbox" name="symptom" value="Shivering"/>
+            ShortBreath&nbsp;<input type="checkbox" name="symptom" value="ShortBreath"/>&nbsp;&nbsp;
+            Sweating&nbsp;<input type="checkbox" name="symptom" value="Sweating"/>&nbsp;&nbsp;
+            Vomiting&nbsp;<input type="checkbox" name="symptom" value="Vomiting"/>&nbsp;&nbsp;</h3>
+            </br>
+            <center><input type="submit" style="padding: 10px 40px; border-radius: 10px;" name="submit" value="Find" /></center>
+
+          </form>
+          </br></br>
+          <h3 id = "symptomCheck"><%= rDisease %></h3>
+          </br></br></br></br></br>
+        <center>
+
+          <div id = "appHead" >
+            <center><h2 onclick="hideAppHead()" style="text-decoration:none;">Make an Appointment</h2></center>
+          </div>
+
+        </center>
+        </br></br</br>
+
+        <div id = "appointment">
+          <h2>Make An Appointment</h2><br><br><br>
+          <form action = '/Appointed' method = "POST">
+
+            <h2><label for = "email">EMail:</label>
+            <input type = "email" name="email"/><br><br>
+
+            <label for = "name">Name:</label>
+            <input type = "text" name="name"/><br><br>
+
+            <label for = "phno">Phone Number:</label>
+            <input type = "number" name="phno"/><br><br>
+
+
+            <label for = "City">City:</label>
+            <input type = "text" name="city"/><br><br>
+
+              <label for = "pcode">Pincode:</label>
+            <input type = "number" name="pcode"/><br><br>
+
+              <label for = "date">Date of Appointment:</label>
+              <input type = "date" name="date"/><br><br>
+
+            <label for = "effect">Disease:</label>
+            <input type = "text" name="effect"/></h2><br><br>
+
+<!--
+            <h3>Fever Specialist&nbsp;<input type="radio" name="consult" value="Raman"/>&nbsp;&nbsp;</h3>
+            <h3>Asthma Specialist&nbsp;<input type="radio" name="consult " value="Raghav"/>&nbsp;&nbsp;</h3>
+            <h3>Dengue Specialist&nbsp;<input type="radio" name="consult" value="Ravan"/>&nbsp;&nbsp;</h3>-->
+
+            <SELECT name = "consult">
+
+              <OPTION value="Raman">Fever Specialist</OPTION>
+              <OPTION value="Raghav">Asthma Specialist</OPTION>
+              <OPTION value="Ravan">Dengue Specialist</OPTION>
+
+            </SELECT>
+
+
+              </br></br></br>
+
+            <input type = "submit" style="padding: 10px 40px; border-radius: 10px;" value = "SUBMIT"/>
+
+          </form>
+        </div>
+        </br></br></br></br></br>
+
+
+        </div>
+
+        </br></br></br></br>
+        <hr>
+        </br></br></br>
+
+        <div class="top_content">
+
+          <div class="column_one">
+            <h2>Subscription</h2>
+            <p>news</p>
+            <br>
+            <p><a href="#" class="btn">Read more</a></p>
+          </div>
+
+
+          <div class="column_two border_left">
+            <h2>Other Services</h2>
+            <p>news</p>
+            <br>
+            <p><a href="#" class="btn">Read more</a></p>
+          </div>
+
+        </div>
+
+
+      </div>
+
+      <div class="clear"></div>
+
+      <!--start footer from here-->
+      <div id="footer">Copyright &copy; 2014. Design by <a href="" target="_blank">Health Care Team</a><br>
+
+
+        <a href=""><img src="images/footer.gif" class="copyright" alt=""></a></div>
+
+      <!--/. end footer from here-->
+    </div>
+
+  </div>
+
+
+
+<!--    <p>Variable <%= points %></p>
+  </br></br>
+  <ul>
+    <% for(var i=0;i<5;i++){ %>
+    <li><%= title %></li>
+    <%}%>
+  </ul>-->
+
+
+
+
+  </body>
+</html>
+<script>
+  function hideAppHead(){
+
+    document.getElementById("appHead").style.visibility = "hidden";
+    document.getElementById("appointment").style.visibility = "visible";
+  }
+  function showAppHead(){
+    console.log("hia");
+    document.getElementById("appHead").style.visibility = "visible";
+    document.getElementById("appointment").style.visibility = "hidden";
+  }
+</script>

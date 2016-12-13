@@ -1,0 +1,93 @@
+
+{
+ "diseases":[
+    {
+       "name":"fever",
+
+       "description1":"Fever is also known as hyperthermia, pyrexia, or elevated temperature. It describes a body temperature that’s higher than normal. Fever can affect children and adults. ",
+       "description2":"Recognizing a fever can enable you to get treatment and proper monitoring for it. Normal body temperature is typically around 98.6°F, or 37°C. However, the normal body temperature for each person can vary slightly. Normal body temperature may also fluctuate depending on the time of day.",
+       "description3":"A short-term increase in body temperature can help your body fight off illness. However, a severe fever can be a symptom of a serious condition that requires immediate medical attention.",
+       "description4":"To check you or your child’s temperature, you can use an oral, rectal, or axillary thermometer.An oral thermometer should be placed under the tongue for three minutes.",
+       "description5":"You may also use an oral thermometer for an axillary, or armpit, reading. Simply place the thermometer in the armpit and cross your arms or your child’s arms over the chest. Wait four to five minutes before removing the thermometer.",
+
+       "precautions1":"Wash your hands often, especially before eating, after using the toilet, and after being around large numbers of people.",
+       "precautions2":"Show your children how to wash their hands properly. Instruct them to cover both the front and back of each hand with soap and rinse thoroughly under warm water.",
+       "precautions3":"Carry hand sanitizer or antibacterial wipes with you. They can come in handy when you don’t have access to soap and water.",
+       "precautions4":"Avoid touching your nose, mouth, or eyes. Doing so makes it easier for viruses and bacteria to enter your body and cause infection.",
+       "precautions5":"Cover your mouth when you cough and your nose when you sneeze. Teach your children to do the same.",
+
+       "readMore":"http://www.healthline.com/search?q1=fever"
+    },
+
+    {
+       "name":"dengue",
+
+       "description1":"Dengue fever is a disease spread by the Aedes aegypti mosquito and is caused by one of four dengue viruses. ",
+       "description2":"Once you are infected with one of the dengue viruses, you will develop immunity to that virus for the rest of your life.",
+       "description3":"However, you can still be infected with the other three viruses. It is possible to get all four dengue viruses in your lifetime.",
+       "description4":"The viruses that cause dengue fever are related to those that cause yellow fever and West Nile virus infection.",
+       "description5":"The Center for Disease Control and Prevention estimates that at least 400 million cases of dengue fever occur across the globe every year. Tropical regions are heavily affected.",
+
+       "precautions1":"There is no vaccine to prevent dengue fever. The best method of protection is to avoid mosquito bites and to reduce the mosquito population. ",
+       "precautions2":"Reducing the mosquito population involves getting rid of mosquito breeding areas. These areas include any place that still water can collect.",
+       "precautions3":"The symptoms of dengue hemorrhagic fever can trigger dengue shock syndrome. Dengue shock syndrome is severe, and can lead to excessive bleeding and even death.",
+       "precautions4":"There is no medication or treatment specifically for dengue infection. If you believe you may be infected with dengue, you should use over-the-counter pain relievers to reduce your fever, headache, and joint pain. ",
+       "precautions5":"Avoid heavily populated residential areas , use mosquito repellent indoors and outdoors,wear long-sleeved shirts and pants tucked into socks,use air conditioning instead of opening windows",
+
+       "readMore":"http://www.healthline.com/search?q1=dengue"
+    },
+
+    {
+       "name":"malaria",
+
+       "description1":"Malaria is a life-threatening disease. It’s typically transmitted through the bite of an infected Anopheles mosquito. Infected mosquitoes carry the Plasmodium parasite. When this mosquito bites you, the parasite is released into your bloodstream.",
+       "description2":"Once the parasites are inside your body, they travel to the liver, where they mature. After several days, the mature parasites enter the bloodstream and begin to infect red blood cells. Within 48 to 72 hours.",
+       "description3":"The parasites continue to infect red blood cells, resulting in symptoms that occur in cycles that last two to three days at a time.",
+       "description4":"Malaria is typically found in tropical and subtropical climates where the parasites can live. The World Health Organization (WHO) estimates that about 3.2 billion people are at risk of malaria.",
+       "description5":"In the United States, the Centers for Disease Control and Prevention (CDC) report 1,500 cases of malaria annually.",
+
+       "precautions1":"Malaria is a life-threatening condition. Treatment for the disease is typically provided in a hospital. Your doctor will prescribe medications based on the type of parasite that you have.",
+       "precautions2":"In some instances, the medication prescribed will not clear you of the infection. Parasites that are resistant to drugs have been reported.",
+       "precautions3":"These parasites make many drugs ineffective. If this occurs, your doctor may need to use more than one medication or change medications altogether to treat your condition.",
+       "precautions4":"There’s no vaccine available to prevent malaria. Talk to your doctor if you’re traveling to an area where malaria is common or if you live in such an area. You may be prescribed medications to prevent the disease.",
+       "precautions5":"Talk to your doctor about long-term prevention if you live in an area where malaria is common. Sleeping under a mosquito net may help prevent being bitten by an infected mosquito.",
+
+       "readMore":"http://www.healthline.com/search?q1=malaria"
+    },
+
+    {
+       "name":"asthma",
+
+       "description1":"Asthma is an inflammatory disease of the lungs. It makes breathing difficult and brings on attacks of coughing, wheezing, tightness in the chest and shortness of breath.",
+       "description2":"According to the Centers for Disease Control and Prevention (CDC), approximately 25 million Americans suffer from asthma. It’s the most common chronic condition among American children.",
+       "description3":"About one in every 10 children has asthma.To understand asthma, you need to understand a little about what happens when you breathe. ",
+       "description4":"Normally, with every breath you take, air goes through your nose and down into your throat, eventually making it to your lungs. There are lots of small air passages in your lungs that help deliver oxygen from the air into your bloodstream.",
+       "description5":"Asthma symptoms occur when the lining of these air passages swell and the muscles around them tighten. Mucus then fills the airways, further reducing the amount of air that can pass through.",
+
+       "precautions1":"Get vaccinated for influenza and pneumonia. Staying current with vaccinations can prevent flu and pneumonia from triggering asthma flare-ups.",
+       "precautions2":"A number of outdoor allergens and irritants — ranging from pollen and mold to cold air and air pollution — can trigger asthma attacks. Find out what causes or worsens your asthma, and take steps to avoid those triggers.",
+       "precautions3":"You may learn to recognize warning signs of an impending attack, such as slight coughing, wheezing or shortness of breath. But because your lung function may decrease before you notice any signs or symptoms.",
+       "precautions4":"If you act quickly, you're less likely to have a severe attack. You also won't need as much medication to control your symptoms.",
+       "precautions5":"Just because your asthma seems to be improving, don't change anything without first talking to your doctor. It's a good idea to bring your medications with you to each doctor visit.",
+
+       "readMore":"http://www.healthline.com/search?q1=asthma"
+    },
+    {
+       "name":"typhoid",
+
+       "description1":"Typhoid fever is caused by the bacteria , which are transmitted among humans through ingestion of contaminated food or water. Most cases are acquired abroad under conditions of poor hygiene.",
+       "description2":"After an incubation period of 10 to 14 days, victims suffer fever with or without diarrhea and abdominal pain. Most victims also complain of headache, fatigue, and loss of appetite.",
+       "description3":"“Rose spots,” which are 2 to 4 mm red spots on the trunk that blanch (lose their color) when pressed, are seen in some cases. The liver may become inflamed. Most cases resolve in 3 to 4 weeks.",
+       "description4":"The seriously stricken individual may suffer a severely inflamed bowel, bleeding from the gastrointestinal tract, pneumonia, heart failure, severe fever, and death.",
+       "description5":"A physician who diagnoses typhoid fever will treat the victim with an intravenous antibiotic. The layperson can use trimethoprim-sulfamethoxazole; administer one double-strength tablet twice a day for 2 to 3 weeks.",
+
+       "precautions1":"DO complete taking the capsules at least one week before traveling. DO take each capsule on an empty stomach (1 hour before eating or 2 hours after eating).",
+       "precautions2":"DO take each capsule with a full glass of cool or lukewarm water.4. DO keep capsules in the refrigerator. DON'T take the vaccine if you are taking antibiotics .",
+       "precautions3":"DON'T take the vaccine with alcohol (wait at least 2 hours before drinking alcohol). DON'T open or chew the capsules.4. DON'T forget to skip a day between capsules.",
+       "precautions4":"DON'T forget to take all 4 capsules.The capsules are designed to stay intact and only dissolve then they reach the small intestine. The capsules should be taken at approximately the same time each day.",
+       "precautions5":" If a person has had an adverse reaction to the oral typhoid vaccine or any other enteric coated capsule in the past, the oral vaccine should not be taken. If the person has a fever, continued vomiting, or diarrhea/stomach illness, the oral vaccine should not be taken.",
+
+       "readMore":"http://www.mayoclinic.org/diseases-conditions/typhoid-fever/basics/definition/con-20028553"
+    }
+]
+}
